@@ -2,6 +2,7 @@ package pratica.aprendizado.spring.pratica.aprendiazdo.spring;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
 
 //como esse codigo e pra estudo irei lotar ele de informações
 // ao fazer um api rest podemos criar varios tipos de arquitetura mas uma muito utilizada que podemos usar e mvc
@@ -13,6 +14,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 //
 
 @SpringBootApplication
+//ao ser feito o model que vc quer que seja feito deploy use esse exemplo de baixo fazendo a devida referencia a entidade
+@EntityScan("model")
 public class  Application {
 
 	public static void main(String[] args) {
