@@ -29,13 +29,8 @@ public class ProdutoController {
 
     @GetMapping("/{id}")
     public ResponseEntity<?> buscarProduto(@PathVariable Long id){
-        try {
             Model produto = produtoService.buscarPorId(id);
             return ResponseEntity.ok(produto);
-        }
-        catch (RecursoNaoEncontradoException e){
-            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(e.getMessage());
-        }
     }
 
     @PostMapping
