@@ -22,6 +22,14 @@ public class Usuarios {
 
     public Usuarios() {}
 
+
+    public Usuarios(String username, String password) {
+        this.username = username;
+        this.password = password;
+    }
+
+
+
     public Usuarios(String username, String password, Long id){
         this.id = id;
         this.password = password;
