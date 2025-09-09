@@ -15,7 +15,8 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
 
 @SpringBootApplication
 //ao ser feito o model que vc quer que seja feito deploy use esse exemplo de baixo fazendo a devida referencia a entidade
-@EntityScan("model")
+@EntityScan({"model", "usuarios"})
+
 public class  Application {
 
 	public static void main(String[] args) {
