@@ -21,7 +21,7 @@ public class  Application {
 
 	public static void main(String[] args) {
 		SpringApplication.run(Application.class, args);
-	System.out.println("apenas modificando para testar o git na faculdade");
+	System.out.println("testando se o commit do securityConfig ta no git");
     }
 
 
