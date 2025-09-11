@@ -46,3 +46,5 @@ public class SecurityConfig {
         return new ProviderManager(authProvider);
     }
 }
+//adicao do spring security com ROLES
+

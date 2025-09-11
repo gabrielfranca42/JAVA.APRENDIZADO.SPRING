@@ -52,4 +52,8 @@ public class Usuarios {
     public void setPassword(String password) {
         this.password = password;
     }
+
 }
+
+
+//para spring security vamos adicionar depois aqui os roles
